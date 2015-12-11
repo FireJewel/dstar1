@@ -17,7 +17,31 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="224"></block>
+                  <block type="movement_stop" id="224">
+                    <next>
+                      <block type="oled_cleardisplay" id="239">
+                        <next>
+                          <block type="oled_setcursor" id="248" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="250">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="249">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="265">
+                                <field name="TEXT">2+2=4</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
